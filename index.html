@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Frontend Mentor | Article preview component</title>
   </head>
+
   <body>
     <main>
       <div class="box">
@@ -29,17 +30,21 @@
               it felt slightly bare and uninviting. I’ve got some simple tips to
               help you make any room feel complete.
             </p>
-            <div class="box-footer">
-              <div class="box-profile">
+            <!-- mobile-footer -->
+            <div id="box-footer" class="box-footer ">
+              <!-- profile-mobile -->
+              <div id="profile" class="box-profile ">  
                 <img src="images/avatar-michelle.jpg" alt="avatar" />
                 <span class="profile-name"> Michelle Appleton</span>
                 <span class="profile-date">28 Jun 2020</span>
               </div>
-              <div id="share-icon" class="box-social-media">
+              <!-- social-mobile -->
+              <div id="share-icon" class="box-social-media ">
                 <img src="images/icon-share.svg" alt="icon-share" />
               </div>
             </div>
-            <div id="active" class="active">
+            <!-- active-mobile -->
+            <div id="active" class="active ">
               <a href="/" id="share">SHARE</a>
               <a href="https://www.facebook.com"
                 ><img src="images/icon-facebook.svg" alt="icon-facebook"
@@ -55,6 +60,8 @@
         </div>
       </div>
     </main>
+
     <script src="index.js"></script>
+    <script src="mobile.js"></script>
   </body>
 </html>
