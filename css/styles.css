@@ -70,10 +70,13 @@ p {
   height: 40px;
   border-radius: 100%;
 }
+.profile-name {
+  font-size: 12px;
+}
 .profile-date {
   color: var(--extra-bg-color);
   position: absolute;
-  bottom: -3px;
+  bottom: -5px;
   left: 60px;
   font-weight: 500;
 }
@@ -133,27 +136,29 @@ p {
   .active::after {
     display: none;
   }
-  /* Implement JS CODE */
+  /* Implement JS CODE ADD THIS CLASSES */
+
   .profile-mobile {
     visibility: hidden;
   }
   .active-mobile {
-    display: flex;
-    right: 40%;
-    bottom: -30px;
-    box-shadow: none;
-    background: none;
-  }
-  .mobile-footer {
-    position: absolute;
-    left: 0;
     width: 100%;
     height: 60px;
-    border-radius: 0 0 8px 8px;
+    left: 10px;
+    display: flex;
+    right: 40%;
+    bottom: 0px;
+    box-shadow: none;
+    background: none;
     background-color: var(--main-font-color);
+    justify-content: left;
+    border-radius: 0 0 8px 8px;
+    margin-left: -10px;
   }
-  .social-mobile{
+  .social-mobile {
     position: absolute;
     right: 35px;
+    z-index: 10;
+    margin-top: 15px;
   }
 }
