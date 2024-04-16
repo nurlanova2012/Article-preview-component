@@ -14,10 +14,10 @@ body {
   color: var(--main-font-color);
   background-color: var(--bg-color);
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
   min-height: 100vh;
   font-size: 13px;
+  padding: 0;
+  margin: 0;
 }
 img {
   width: 100%;
@@ -25,7 +25,7 @@ img {
   object-fit: cover;
   border-radius: 8px 0 0 8px;
 }
-a{
+a {
   text-decoration: none;
 }
 /*HEADING*/
@@ -51,7 +51,7 @@ p {
   position: relative;
 }
 .box-content-text {
-  padding: 15px 35px 25px 15px;
+  padding: 15px 35px 25px 35px;
 }
 .box-footer {
   display: flex;
@@ -120,4 +120,40 @@ p {
   display: inline-block;
   letter-spacing: 3px;
   color: var(--extra-bg-color);
+}
+
+@media (max-width: 410px) {
+  .box-container {
+    flex-direction: column;
+    gap: 0;
+  }
+  img {
+    border-radius: 8px 8px 0 0;
+  }
+  .active::after {
+    display: none;
+  }
+  /* Implement JS CODE */
+  .profile-mobile {
+    visibility: hidden;
+  }
+  .active-mobile {
+    display: flex;
+    right: 40%;
+    bottom: -30px;
+    box-shadow: none;
+    background: none;
+  }
+  .mobile-footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    border-radius: 0 0 8px 8px;
+    background-color: var(--main-font-color);
+  }
+  .social-mobile{
+    position: absolute;
+    right: 35px;
+  }
 }
